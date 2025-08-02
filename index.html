@@ -55,6 +55,16 @@
         // Catatan: Script fullscreen di atas mungkin tidak berjalan otomatis di banyak browser modern
         // karena pembatasan keamanan. Anda mungkin perlu memicu fullscreen dari interaksi pengguna (misalnya, klik tombol).
         // Untuk tujuan responsivitas dasar, viewport meta tag dan CSS sudah cukup.
+
+        // --- SCRIPT AUTO REFRESH DITAMBAHKAN DI SINI ---
+        // Atur waktu dalam milidetik (3 menit = 180000 milidetik)
+        const refreshTime = 180000; 
+
+        // Fungsi untuk me-refresh halaman setelah waktu yang ditentukan
+        setTimeout(function() {
+            location.reload();
+        }, refreshTime);
+        
     </script>
 </body>
 </html>
